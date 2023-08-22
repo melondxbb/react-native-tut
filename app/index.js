@@ -5,7 +5,7 @@ import { View, Text, ScrollView, SafeAreaView } from "react-native";
 import { images, icons, COLORS, SIZES } from '../constants';
 import { Nearbyjobs, Popularjobs, ScreenHeaderBtn, Welcome } from "../components";
 
-
+// 34:40
 
 const Home = () => {
     const router = useRouter();
@@ -20,14 +20,21 @@ const Home = () => {
                         <ScreenHeaderBtn iconUrl={icons.menu} dimention='60%' />
                     ),
                     headerRight: () => (
-                        <ScreenHeaderBtn iconUrl={icons.profile} dimention='100%' />
+                        <ScreenHeaderBtn iconUrl={images.profile} dimention='100%' />
                     ),
                     headerTitle: '',
                 }} 
             />
             <ScrollView showsVerticalScrollIndicator={false}>
 
-            <Text>Home</Text>
+            <View style={{
+                flex: 1,
+                padding: SIZES.medium
+            }}>
+                <Welcome />
+                <Popularjobs />
+                <Nearbyjobs />
+            </View>
             </ScrollView>
         </SafeAreaView>
     );
