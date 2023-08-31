@@ -5,7 +5,7 @@ import { View, Text, ScrollView, SafeAreaView } from "react-native";
 import { images, icons, COLORS, SIZES } from '../constants';
 import { Nearbyjobs, Popularjobs, ScreenHeaderBtn, Welcome } from "../components";
 
-// 53:55
+// 01:03:00
 
 const Home = () => {
     const router = useRouter();
