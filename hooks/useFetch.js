@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-const apiKey = "96b52163b8msh0a9e098a31834ebp1203b7jsnb61abda603fd";
+export const apiKey = "96b52163b8msh0a9e098a31834ebp1203b7jsnb61abda603fd";
 
 const useFetch = (endpoint, query) => {
   const [data, setData] = useState([]);
